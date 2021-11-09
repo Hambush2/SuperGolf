@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 638327087994061488}
   - component: {fileID: 3843204354112988750}
   - component: {fileID: 2339110431247734519}
-  - component: {fileID: 6039204093391887809}
   - component: {fileID: 2978779533478703815}
   - component: {fileID: 7437074577808278885}
+  - component: {fileID: 2507296743495726101}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -34073,20 +34073,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8299605540147497377}
   m_Mesh: {fileID: 0}
---- !u!64 &6039204093391887809
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8299605540147497377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!54 &2978779533478703815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34115,3 +34101,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1032d199d23754089e6f00d0fdd256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &2507296743495726101
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299605540147497377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.879115
+  m_Center: {x: -2.8791142, y: 2.531719, z: -2.4692516}
