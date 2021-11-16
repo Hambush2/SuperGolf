@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BallLauncher : MonoBehaviour
 {
-    [SerializeField] private Ball _ball;
-    [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private GameObject _ball;
+    public float LaunchVelocity = 1700f;
 
-    private void Start()
+    private void Update()
     {
-        Instantiate(_ball, _spawnPoint.position, Quaternion.identity);
+        if(Input.GetButtonDown("Fire1"))
+        {
+            GameObject ball = Instantiate(_ball, transform.position, Quaternion.identity);
+            ball.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, LaunchVelocity, 0));
+        }
     }
 }
