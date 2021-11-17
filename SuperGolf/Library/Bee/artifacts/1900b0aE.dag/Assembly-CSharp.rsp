@@ -323,10 +323,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/Scripts/Ball.cs"
-"Assets/Scripts/BallLauncher.cs"
-"Assets/Scripts/Block.cs"
-"Assets/Scripts/BuildingSpawn.cs"
+"Assets/Scripts/ZackScripts/Ball.cs"
+"Assets/Scripts/ZackScripts/BallLauncher.cs"
+"Assets/Scripts/ZackScripts/Block.cs"
+"Assets/Scripts/ZackScripts/BuildingSpawn.cs"
+"Assets/Scripts/ZackScripts/CameraFollow.cs"
 -langversion:8.0
 
 /deterministic
