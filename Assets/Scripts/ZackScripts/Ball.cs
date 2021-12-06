@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        JumpForce = _rigidbody.mass * 19.62f;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,8 +23,10 @@ public class Ball : MonoBehaviour
         if (other.TryGetComponent(out Bounceable bounceable))
         {
             // Add Bouncing
-            _rigidbody.velocity = Vector3.zero;
+            //_rigidbody.velocity = Vector3.zero;
+            JumpForce /= 2 ;
             _rigidbody.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+
         }
     }
 }

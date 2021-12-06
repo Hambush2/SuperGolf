@@ -24,15 +24,10 @@ public class ShrapnelForce : MonoBehaviour
     {
         
     }
-    void FixedUpdate() 
+    
+    void OnTriggerEnter(Collider other) 
     {
-        int count = 30;
-
-        if(count > 0) 
-        {
-            count--;
-        }
-        if(count <= 0)
+        if(other.tag == "Floor") 
         {
             Destroy(this.gameObject);
         }
