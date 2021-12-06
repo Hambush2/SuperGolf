@@ -27,7 +27,7 @@ public class BlockDestruction : MonoBehaviour
         {
             for (int count = 0; count <= rand.Next(1, maxShrap + 1);)
             {
-                Instantiate(shrapnel, this.transform.position + new Vector3(2,0,2), Quaternion.identity);
+                Instantiate(shrapnel, this.transform.position + new Vector3(4,0,4), Quaternion.identity);
                 count++;
             }
             Destroy(this.gameObject);
