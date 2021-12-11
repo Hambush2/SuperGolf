@@ -23,7 +23,6 @@ public class FinalController : MonoBehaviour
     //canon offset
     public Vector3 offset;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +73,6 @@ public class FinalController : MonoBehaviour
         iball = Instantiate(ball, this.transform.position + offset, Quaternion.identity);
         //send it with force from input
         iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis, -pullDis, -lrPullDis), ForceMode.Impulse);
-
         pullDis = 0;
     }
 

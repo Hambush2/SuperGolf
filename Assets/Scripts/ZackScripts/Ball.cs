@@ -7,11 +7,20 @@ public class Ball : MonoBehaviour
 {
     public float JumpForce;
     private Rigidbody _rigidbody;
+    private float _acceleration;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        JumpForce = _rigidbody.mass * 19.62f;
+        //JumpForce = _rigidbody.mass * 19.62f;
+    }
+
+    private void FixedUpdate()
+    {
+        _acceleration = _rigidbody.velocity.magnitude / Time.deltaTime;
+        _acceleration /= 40f;
+        Debug.Log(_acceleration);
+        JumpForce = _rigidbody.mass * _acceleration;
     }
 
     private void OnTriggerEnter(Collider other)
