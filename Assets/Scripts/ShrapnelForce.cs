@@ -9,9 +9,17 @@ public class ShrapnelForce : MonoBehaviour
     void Awake() 
     {
         System.Random rand = new System.Random();
-        X = rand.Next(20, 51);
-        Z = rand.Next(20, 51);
+        X = rand.Next(25, 56);
+        Z = rand.Next(25, 56);
         Y = this.transform.position.y;
+        if(rand.Next(2) == 1) 
+        {
+            X = -X;
+        }
+        if(rand.Next(2) == 1) 
+        {
+            Z = -Z;
+        }
         this.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(X,Y,Z), ForceMode.Impulse);
     }
     void Start()

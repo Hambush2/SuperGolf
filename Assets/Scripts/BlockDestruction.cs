@@ -21,13 +21,26 @@ public class BlockDestruction : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        int xSpawn = 2;
+        int zSpawn = 2;
         System.Random rand = new System.Random();
 
         if (other.tag == "Projectile")
         {
+            
             for (int count = 0; count <= rand.Next(1, maxShrap + 1);)
             {
-                Instantiate(shrapnel, this.transform.position + new Vector3(4,0,4), Quaternion.identity);
+                //determining xSpawn coord
+                if (rand.Next(2) == 1)
+                {
+                    xSpawn = -2;
+                }
+                //determining zSpawn coord
+                if (rand.Next(2) == 1)
+                {
+                    zSpawn = -2;
+                }
+                Instantiate(shrapnel, this.transform.position + new Vector3(xSpawn,0,zSpawn), Quaternion.identity);
                 count++;
             }
             Destroy(this.gameObject);
