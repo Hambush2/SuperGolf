@@ -13,4 +13,9 @@ public class SettingsPopUp : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public void OnVolumeValue(float value)
+    {
+        Debug.Log("Volume has changed" + value);
+    }
 }
