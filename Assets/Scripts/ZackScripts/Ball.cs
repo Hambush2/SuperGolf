@@ -35,7 +35,11 @@ public class Ball : MonoBehaviour
             //_rigidbody.velocity = Vector3.zero;
             JumpForce /= 2 ;
             _rigidbody.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
-
+        }
+        if(other.TryGetComponent(out ExplosionBlock explosionBlock))
+        {
+            explosionBlock.SetActivate(true);
+            Destroy(explosionBlock.gameObject, 0.5f);
         }
     }
 }
