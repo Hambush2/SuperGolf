@@ -8849,6 +8849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3739116587569739129, guid: dedecdd717eb50b45b9731cf59124294, type: 3}
+      propertyPath: _explosionParticle
+      value: 
+      objectReference: {fileID: 1472517160122636, guid: 42b5a7c17e87672438c3602c0b701f71, type: 3}
     - target: {fileID: 3739116587569739134, guid: dedecdd717eb50b45b9731cf59124294, type: 3}
       propertyPath: m_Name
       value: TNT
