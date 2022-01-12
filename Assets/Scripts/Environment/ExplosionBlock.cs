@@ -7,6 +7,7 @@ public class ExplosionBlock : MonoBehaviour
 {
     private Explosion _explosion;
     private bool _isActivated = false;
+    [SerializeField] private GameObject _explosionParticle;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class ExplosionBlock : MonoBehaviour
         if (_isActivated)
         {
             _explosion.Explode();
+            Instantiate(_explosionParticle, transform.position, Quaternion.identity);
         }
     }
 
