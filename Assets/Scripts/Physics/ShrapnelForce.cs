@@ -39,5 +39,10 @@ public class ShrapnelForce : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.TryGetComponent(out ExplosionBlock explosionBlock))
+        {
+            explosionBlock.SetActivate(true);
+            Destroy(explosionBlock.gameObject, 0.5f);
+        }
     }
 }

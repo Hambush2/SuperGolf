@@ -794,6 +794,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6955344057543402944}
   - component: {fileID: 6955344057543402945}
+  - component: {fileID: -5616162846962709028}
+  - component: {fileID: -1127776601501839738}
+  - component: {fileID: -893199714188910395}
   m_Layer: 0
   m_Name: Clock
   m_TagString: Untagged
@@ -846,6 +849,49 @@ MonoBehaviour:
   _hoursPivot: {fileID: 6955344058310638331}
   _minutesPivot: {fileID: 6955344057693910134}
   _secondsPivot: {fileID: 6955344057141838971}
+--- !u!54 &-5616162846962709028
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955344057543403007}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!64 &-1127776601501839738
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955344057543403007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!65 &-893199714188910395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955344057543403007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6955344057693910133
 GameObject:
   m_ObjectHideFlags: 0

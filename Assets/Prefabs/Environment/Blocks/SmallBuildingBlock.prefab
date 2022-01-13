@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 4748730600019712569}
   m_Layer: 0
   m_Name: SmallBuildingBlock
-  m_TagString: Untagged
+  m_TagString: BreakBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3900660850940888299}
-  m_LocalRotation: {x: -0, y: -0.36039495, z: -0, w: 0.9327998}
+  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 0.36663, y: 0.18318, z: 0.36663}
   m_Children:
@@ -135,7 +135,7 @@ Transform:
   - {fileID: 3900660851200299971}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -42.249, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!54 &3900660850940888341
 Rigidbody:
   m_ObjectHideFlags: 0
