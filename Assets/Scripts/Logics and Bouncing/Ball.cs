@@ -40,6 +40,8 @@ public class Ball : MonoBehaviour
         {
             explosionBlock.SetActivate(true);
             Destroy(explosionBlock.gameObject, 0.5f);
+            Coin.AddPoints(BlockType.EXPLOSIONBLOCK);
+            Debug.Log(Coin.Count);
         }
     }
 }

@@ -12,19 +12,20 @@ public class Block : MonoBehaviour
             if (other.TryGetComponent(out Ball ball))
             {
                 // Add Points
-                Debug.Log("+1");
+                Coin.AddPoints(BlockType.BLOCK);
             }
             if (other.tag == "Floor")
             {
                 //Add points
-                Debug.Log("+1F");
+                //Debug.Log("+1F");
                 if (gameObject.tag == "SolidBlock")
                 {
                     //Stop script running
+                    Coin.AddPoints(BlockType.EXPLOSIONBLOCK);
                     active = false;
-
                 }
             }
         }
+        Debug.Log(Coin.Count);
     }
 }
