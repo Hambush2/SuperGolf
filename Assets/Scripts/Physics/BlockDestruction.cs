@@ -21,8 +21,8 @@ public class BlockDestruction : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        float xSpawn = 3.0f;
-        float zSpawn = 3.0f;
+        float xSpawn = 5.0f;
+        float zSpawn = 5.0f;
         System.Random rand = new System.Random();
 
         if (other.tag == "Projectile")

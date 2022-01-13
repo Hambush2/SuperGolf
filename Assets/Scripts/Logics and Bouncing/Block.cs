@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    bool touched = false;
+    bool active = true;
     public void OnTriggerEnter(Collider other) 
     {
-        if (other.TryGetComponent(out Ball ball))
+        if (active) 
         {
-            // Add Points
-            Debug.Log("+1");
-        }
-        if (other.tag == "Floor") 
-        {
-            //Add points
-            Debug.Log("+1F");
-            if (gameObject.tag == "SolidBlock")
+            if (other.TryGetComponent(out Ball ball))
             {
-                //Stop script running
-                Debug.Log("Disable");
+                // Add Points
+                Debug.Log("+1");
+            }
+            if (other.tag == "Floor")
+            {
+                //Add points
+                Debug.Log("+1F");
+                if (gameObject.tag == "SolidBlock")
+                {
+                    //Stop script running
+                    active = false;
 
+                }
             }
         }
     }
