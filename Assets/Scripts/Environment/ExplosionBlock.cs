@@ -37,14 +37,6 @@ public class ExplosionBlock : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(gameObject.TryGetComponent(out Ball ball))
-        {
-            _explosionAudio.Play();
-        }
-    }
-
     public void SetActivate(bool isActivated)
     {
         _isActivated = isActivated;
