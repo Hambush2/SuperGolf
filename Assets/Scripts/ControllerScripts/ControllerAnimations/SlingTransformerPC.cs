@@ -10,6 +10,6 @@ public class SlingTransformerPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localScale = new Vector3(this.transform.localScale.x, 1 + -(cannon.GetComponent<FinalControllerPC>().pullDis * transformerDampener), this.transform.localScale.z);
+        this.transform.localScale = new Vector3(this.transform.localScale.x, this.transform.localScale.y, 1 + -(cannon.GetComponent<FinalControllerPC>().pullDis * transformerDampener));
     }
 }

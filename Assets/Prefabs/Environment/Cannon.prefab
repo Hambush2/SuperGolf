@@ -1960,6 +1960,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1998545270730470724}
     m_Modifications:
+    - target: {fileID: 19959941273801719, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
+      propertyPath: transformerDampener
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 244089356017480466, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
       propertyPath: m_Name
       value: Slingshot
