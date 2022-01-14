@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class SettingsPopUp : MonoBehaviour
+public class GameOverPopup : MonoBehaviour
 {
-    //[SerializeField] private GameManager _gameManager = null;
+    [SerializeField] private TMP_Text _scoreText;
+    private bool isOpened = false;
+
+
     public void Open()
     {
         gameObject.SetActive(true);
+        _scoreText.text = Coin.Count.ToString();
     }
 
     public void Close()
@@ -20,8 +25,8 @@ public class SettingsPopUp : MonoBehaviour
         GameManager.EndGame();
     }
 
-    public void OnVolumeValue(float value)
+    public void RestartLevel()
     {
-        Debug.Log("Volume has changed" + value);
+        GameManager.StartGame();
     }
 }
