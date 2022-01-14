@@ -19,32 +19,39 @@ public class BlockDestruction : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        float xSpawn = 5.0f;
-        float zSpawn = 5.0f;
-        System.Random rand = new System.Random();
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    float xSpawn = 3.0f;
+    //    float zSpawn = 3.0f;
+    //    Vector3[] spawnCo = new Vector3[4];
+    //    System.Random rand = new System.Random();
 
-        if (other.tag == "Projectile")
-        {
+    //    if (other.tag == "Projectile")
+    //    {
             
-            for (int count = 0; count <= rand.Next(1, maxShrap + 1);)
-            {
-                //determining xSpawn coord
-                if (rand.Next(2) == 1)
-                {
-                    xSpawn = -2;
-                }
-                //determining zSpawn coord
-                if (rand.Next(2) == 1)
-                {
-                    zSpawn = -2;
-                }
-                Instantiate(shrapnel, this.transform.position + new Vector3(xSpawn,0,zSpawn), Quaternion.identity);
-                count++;
-            }
-            Destroy(this.gameObject);
+    //        //for (int count = 0; count < 4;)
+    //        //{
+    //        //    //determining xSpawn coord
+    //        //    if (rand.Next(2) == 1)
+    //        //    {
+    //        //        xSpawn = -xSpawn;
+    //        //    }
+    //        //    //determining zSpawn coord
+    //        //    if (rand.Next(2) == 1)
+    //        //    {
+    //        //        zSpawn = -zSpawn;
+    //        //    }
+    //        //    spawnCo[count] = new Vector3(this.transform.position.x + xSpawn, this.transform.position.y, this.transform.position.z + zSpawn);
+    //        //    count++;
+    //        //}
+    //        //Instantiate(shrapnel, spawnCo[0], Quaternion.identity);
+    //        ////Instantiate(shrapnel, spawnCo[1], Quaternion.identity);
+    //        ////Instantiate(shrapnel, spawnCo[2], Quaternion.identity);
+    //        ////Instantiate(shrapnel, spawnCo[3], Quaternion.identity);
+    //        ///
 
-        }
-    }
+    //        Destroy(this.gameObject);
+
+    //    }
+    //}
 }
