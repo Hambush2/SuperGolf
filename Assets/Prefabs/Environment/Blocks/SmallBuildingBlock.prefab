@@ -92,7 +92,7 @@ BoxCollider:
   m_GameObject: {fileID: 3900660850871633942}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 3900660850940888343}
   - component: {fileID: 4767640434951612125}
   - component: {fileID: 4748730600019712569}
+  - component: {fileID: 5031322988070750096}
   m_Layer: 0
   m_Name: SmallBuildingBlock
   m_TagString: BreakBlock
@@ -144,7 +145,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3900660850940888299}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -161,11 +162,11 @@ MeshCollider:
   m_GameObject: {fileID: 3900660850940888299}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &3900660850940888343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +206,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shrapnel: {fileID: 1258809727743718571, guid: f2669a2663c075345a21531c3d1e09eb, type: 3}
   maxShrap: 4
+--- !u!65 &5031322988070750096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900660850940888299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.064524, y: 4.9868245, z: 5.3653307}
+  m_Center: {x: 0.21180223, y: 2.6145952, z: 0.13739112}
 --- !u!1 &3900660851015175322
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +311,7 @@ BoxCollider:
   m_GameObject: {fileID: 3900660851015175322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -393,7 +407,7 @@ BoxCollider:
   m_GameObject: {fileID: 3900660851200299968}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -489,7 +503,7 @@ BoxCollider:
   m_GameObject: {fileID: 3900660851457977740}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -585,7 +599,7 @@ BoxCollider:
   m_GameObject: {fileID: 3900660851712909377}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

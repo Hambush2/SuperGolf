@@ -1524,6 +1524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 1998545270730470749}
+  transformerDampener: 0.005
 --- !u!1 &1998545271218994053
 GameObject:
   m_ObjectHideFlags: 0
