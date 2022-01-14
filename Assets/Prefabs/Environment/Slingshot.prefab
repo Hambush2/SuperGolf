@@ -1913,6 +1913,8 @@ GameObject:
   - component: {fileID: 244089356201274642}
   - component: {fileID: 244089356201274643}
   - component: {fileID: 244089356201274640}
+  - component: {fileID: 3148620195581877485}
+  - component: {fileID: 19959941273801719}
   m_Layer: 0
   m_Name: Sling
   m_TagString: Untagged
@@ -2616,3 +2618,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &3148620195581877485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244089356201274654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fd27c94239b1e499d6b64770cc1969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannon: {fileID: 0}
+  transformerDampener: 0.005
+--- !u!114 &19959941273801719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244089356201274654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3671d76e5a4b12e40ae94c57e12540e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannon: {fileID: 0}
+  transformerDampener: 0.01
