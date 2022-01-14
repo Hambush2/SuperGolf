@@ -21,11 +21,11 @@ public class Block : MonoBehaviour
                 if (gameObject.tag == "SolidBlock")
                 {
                     //Stop script running
-                    Coin.AddPoints(BlockType.EXPLOSIONBLOCK);
+                    Coin.AddPoints(BlockType.SOLIDBLOCK);
                     active = false;
                 }
             }
         }
-        Debug.Log(Coin.Count);
+        //Debug.Log(Coin.Count);
     }
 }

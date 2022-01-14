@@ -13,9 +13,13 @@ public class UIController : MonoBehaviour
         _settingsPopUp.Close();
     }
 
+    private void Update()
+    {
+        _scoreText.text = Coin.Count.ToString();
+    }
+
     public void OpenSettingsMenu()
     {
-        Debug.Log("Open Settings");
         _settingsPopUp.Open();
     }
 }
