@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SettingsPopUp : MonoBehaviour
 {
+    //[SerializeField] private GameManager _gameManager = null;
     public void Open()
     {
         gameObject.SetActive(true);
@@ -12,6 +13,11 @@ public class SettingsPopUp : MonoBehaviour
     public void Close()
     {
         gameObject.SetActive(false);
+    }
+
+    public void BackToMenu()
+    {
+        GameManager.EndGame();
     }
 
     public void OnVolumeValue(float value)
