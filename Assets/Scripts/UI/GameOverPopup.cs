@@ -41,6 +41,7 @@ public class GameOverPopup : MonoBehaviour
 
     public void BackToMenu()
     {
+        Debug.Log("Return to menu");
         GameManager.EndGame();
     }
 
