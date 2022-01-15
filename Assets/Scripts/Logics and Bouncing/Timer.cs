@@ -10,19 +10,30 @@ public class Timer : MonoBehaviour
 
     public GameOverPopup GameOverPopup;
 
+    private bool _timerIsRunning = false;
+
     private void Start()
     {
         _countDown = MaxTime;
+        _timerIsRunning = true;
     }
 
     private void Update()
     {
-        _countDown -= Time.deltaTime;
-
-        if(_countDown <= 0)
+        if(_timerIsRunning)
         {
-            Debug.Log("The game should end");
-            GameOverPopup.Open();
+            if (_countDown > 0)
+            {
+                _countDown -= Time.deltaTime;
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                _countDown = 0;
+                _timerIsRunning = false;
+                GameOverPopup.Open();
+            }
         }
+        
     }
 }

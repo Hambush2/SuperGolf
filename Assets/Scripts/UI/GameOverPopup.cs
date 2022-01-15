@@ -7,11 +7,30 @@ public class GameOverPopup : MonoBehaviour
 {
     [SerializeField] private TMP_Text _scoreText;
     private bool isOpened = false;
+    [SerializeField] private TMP_Text _messageText;
+    private bool _winningCondition = false;
+ 
+    public void setCondition(bool cond)
+    {
+        _winningCondition = cond;
+    }
 
+    private void SetMessage()
+    {
+        if(_winningCondition)
+        {
+            _messageText.text = "Congradulations";
+        }
+        else
+        {
+            _messageText.text = "Unlucky";
+        }
+    }
 
     public void Open()
     {
-        gameObject.SetActive(true);
+        SetMessage();
+        gameObject.SetActive(true);     
         _scoreText.text = Coin.Count.ToString();
     }
 
