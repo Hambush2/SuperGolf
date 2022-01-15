@@ -10,8 +10,8 @@ public class ShrapnelForce : MonoBehaviour
     void Awake() 
     {
         System.Random rand = new System.Random();
-        X = rand.Next(15, 20);
-        Z = rand.Next(15, 20);
+        X = rand.Next(15, 35);
+        Z = rand.Next(15, 35);
         Y = this.transform.position.y;
         if(rand.Next(2) == 1) 
         {

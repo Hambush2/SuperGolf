@@ -55,7 +55,7 @@ public class FinalControllerPC : MonoBehaviour
         //instantiate a copy of the ball object
         iball = Instantiate(ball, this.transform.position + offset, Quaternion.identity);
         //send it with force from input
-        iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis, -pullDis, -lrPullDis), ForceMode.Impulse);
+        iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis - 2000, -pullDis, -lrPullDis), ForceMode.Impulse);
         pullDis = 0;
     }
 
