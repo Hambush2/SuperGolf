@@ -26,4 +26,9 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public static void StartLevel1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
 }
