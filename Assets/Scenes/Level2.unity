@@ -5451,6 +5451,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 566780958177807007, guid: bdfe9314832fb4b4e9b8d079c236be74, type: 3}
   m_PrefabInstance: {fileID: 1110982997}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1141678703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1998545270730470749, guid: 36c12dfa07a1a7c4dac1435923717b8b, type: 3}
+  m_PrefabInstance: {fileID: 1739538221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1174784557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5722,8 +5727,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3815e4201c2c9f4e8db37c7b01c63ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningCondition: 400
+  _winningCondition: 12500
   _GameOverPopup: {fileID: 148678229}
+  cannon: {fileID: 1141678703}
 --- !u!4 &1187716253
 Transform:
   m_ObjectHideFlags: 0
