@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 244089356017480471}
   - component: {fileID: 244089356017480468}
   - component: {fileID: 244089356017480469}
+  - component: {fileID: 1190505782673172032}
+  - component: {fileID: 9011685413556477338}
   m_Layer: 0
   m_Name: Slingshot
   m_TagString: Untagged
@@ -98,6 +100,34 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1190505782673172032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244089356017480466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca8024488c55a643910cd85174d4151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannon: {fileID: 0}
+  rotationDampner: 0.005
+--- !u!114 &9011685413556477338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244089356017480466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fa9d83d57268a4698025238a3b24e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannon: {fileID: 0}
+  rotationDampner: 0.005
 --- !u!1 &244089356201274654
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 0}
-  transformerDampener: 0.005
+  transformerDampener: 0.05
 --- !u!114 &19959941273801719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,4 +254,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 0}
-  transformerDampener: 1
+  transformerDampener: 0.05

@@ -1859,34 +1859,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1917652244423014989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998545271660270569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca8024488c55a643910cd85174d4151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannon: {fileID: 1998545270730470749}
-  rotationDampner: 0.005
---- !u!114 &1998545271660270480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998545271660270569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fa9d83d57268a4698025238a3b24e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannon: {fileID: 1998545270730470749}
-  rotationDampner: 0.005
 --- !u!1 &1998545271746957349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,10 +1960,6 @@ PrefabInstance:
       propertyPath: cannon
       value: 
       objectReference: {fileID: 1998545270730470749}
-    - target: {fileID: 19959941273801719, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
-      propertyPath: transformerDampener
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 244089356017480466, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
       propertyPath: m_Name
       value: Slingshot
@@ -2148,23 +2116,26 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 590
       objectReference: {fileID: 0}
+    - target: {fileID: 1190505782673172032, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
+      propertyPath: cannon
+      value: 
+      objectReference: {fileID: 1998545270730470749}
     - target: {fileID: 3148620195581877485, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
       propertyPath: cannon
       value: 
       objectReference: {fileID: 1998545270730470749}
     - target: {fileID: 3148620195581877485, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
-      propertyPath: transformerDampener
-      value: 1
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9011685413556477338, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
+      propertyPath: cannon
+      value: 
+      objectReference: {fileID: 1998545270730470749}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
 --- !u!4 &1998545271660270483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 244089356017480552, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
-  m_PrefabInstance: {fileID: 1792273961883066619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1998545271660270569 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 244089356017480466, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
   m_PrefabInstance: {fileID: 1792273961883066619}
   m_PrefabAsset: {fileID: 0}
