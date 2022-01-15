@@ -23,10 +23,20 @@ public class FinalControllerPC : MonoBehaviour
     //canon offset
     public Vector3 offset;
 
+    //percentage variables
+    float screenSizePercentH;
+    float screenSizePercentW;
+
+    //cannon power amplifier
+    public float canonPower = 10;
+    public float rotationPower = 10;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //get screen size percentage
+        screenSizePercentH = (Screen.height / Screen.height) * 100;
+        screenSizePercentW = (Screen.width / Screen.width) * 100;
     }
 
     // Update is called once per frame
@@ -34,10 +44,11 @@ public class FinalControllerPC : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            startPos = Screen.height / 2;
-            whilePos = Input.mousePosition;
+            startPos = screenSizePercentH / 2;
+            whilePos.y = (Input.mousePosition.y / Screen.height) *100;
+            whilePos.x = (Input.mousePosition.x / Screen.width) * 100;
             pullDis = whilePos.y - startPos;
-            lrPullDis = whilePos.x - Screen.width / 2;
+            lrPullDis = whilePos.x - screenSizePercentW / 2;
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -55,7 +66,7 @@ public class FinalControllerPC : MonoBehaviour
         //instantiate a copy of the ball object
         iball = Instantiate(ball, this.transform.position + offset, Quaternion.identity);
         //send it with force from input
-        iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis, -pullDis, -lrPullDis), ForceMode.Impulse);
+        iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis*canonPower, -pullDis * canonPower, -lrPullDis * rotationPower), ForceMode.Impulse);
         pullDis = 0;
     }
 
