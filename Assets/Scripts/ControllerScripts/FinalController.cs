@@ -23,10 +23,16 @@ public class FinalController : MonoBehaviour
     //canon offset
     public Vector3 offset;
 
+    //percentage variables
+    public float screenSizePercentH;
+    public float screenSizePercentW;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //get screen size percentage
+        screenSizePercentH = (Screen.height / Screen.height) * 100;
+        screenSizePercentW = (Screen.width / Screen.width) * 100;
     }
 
     // Update is called once per frame

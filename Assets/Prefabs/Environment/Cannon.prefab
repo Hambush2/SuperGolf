@@ -1440,6 +1440,8 @@ MonoBehaviour:
   ball: {fileID: 5196919773176732963, guid: 93774ac70d4bb9848b3e7e46f8c4cca4, type: 3}
   iball: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+  screenSizePercentH: 0
+  screenSizePercentW: 0
 --- !u!114 &7233913888079255850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,6 +1461,8 @@ MonoBehaviour:
   ball: {fileID: 5196919773176732963, guid: 93774ac70d4bb9848b3e7e46f8c4cca4, type: 3}
   iball: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+  canonPower: 10
+  rotationPower: 10
 --- !u!1 &1998545270778548798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 1998545270730470749}
-  rotationDampner: 0.0004
+  rotationDampner: 0.005
 --- !u!114 &1998545271660270480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1882,7 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 1998545270730470749}
-  rotationDampner: 0.0004
+  rotationDampner: 0.005
 --- !u!1 &1998545271746957349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,7 +1990,7 @@ PrefabInstance:
       objectReference: {fileID: 1998545270730470749}
     - target: {fileID: 19959941273801719, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
       propertyPath: transformerDampener
-      value: 0.005
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 244089356017480466, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
       propertyPath: m_Name
@@ -2148,6 +2152,10 @@ PrefabInstance:
       propertyPath: cannon
       value: 
       objectReference: {fileID: 1998545270730470749}
+    - target: {fileID: 3148620195581877485, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
+      propertyPath: transformerDampener
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c66a51e8586c74d80ce2cf4e4b342a, type: 3}
 --- !u!4 &1998545271660270483 stripped

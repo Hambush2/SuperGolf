@@ -224,4 +224,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 0}
-  transformerDampener: 0.05
+  transformerDampener: 1
