@@ -5,6 +5,7 @@ using UnityEngine;
 public class FinalControllerPC : MonoBehaviour
 {
     //Establish Variables
+    [SerializeField] private AudioSource _shootingAudio = null;
 
     //position vector
     public Vector2 whilePos;
@@ -66,6 +67,7 @@ public class FinalControllerPC : MonoBehaviour
     {
         //instantiate a copy of the ball object
         iball = Instantiate(ball, this.transform.position + offset, Quaternion.identity);
+        _shootingAudio.Play();
         //send it with force from input
         iball.GetComponent<Rigidbody>().AddForce(new Vector3(pullDis * canonPower, -pullDis * canonPower, -lrPullDis * rotationPower), ForceMode.Impulse);
         pullDis = 0;
