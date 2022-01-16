@@ -31,4 +31,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public static void NextLevel()
+    {
+        Coin.Count = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
