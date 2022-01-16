@@ -9,8 +9,10 @@ public class Timer : MonoBehaviour
     [SerializeField] private float _countDown = 0f;
 
     public GameOverPopup GameOverPopup;
+    public GameObject cannon;
 
     private bool _timerIsRunning = false;
+    bool timeSet = false;
 
     private void Start()
     {
@@ -32,6 +34,13 @@ public class Timer : MonoBehaviour
                 _countDown = 0;
                 _timerIsRunning = false;
                 GameOverPopup.Open();
+
+                if (timeSet == false)
+                {
+                    Time.timeScale = 0;
+                    timeSet = true;
+                }
+                cannon.GetComponent<FinalControllerPC>().enabled = false;
             }
         }
         

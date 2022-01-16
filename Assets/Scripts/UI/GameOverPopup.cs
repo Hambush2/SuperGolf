@@ -19,7 +19,7 @@ public class GameOverPopup : MonoBehaviour
     {
         if(_winningCondition)
         {
-            _messageText.text = "Congradulations";
+            _messageText.text = "Congratulations";
         }
         else
         {

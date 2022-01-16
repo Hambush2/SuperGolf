@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 2616082327655451642}
   - component: {fileID: 2616082327655451643}
   m_Layer: 5
-  m_Name: BackToMenu
+  m_Name: NextBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,9 +602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congradulations
-
-'
+  m_text: Congratulations
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c181ee1202d758242b2baaad0b33aeed, type: 2}
   m_sharedMaterial: {fileID: -9184254919523608327, guid: c181ee1202d758242b2baaad0b33aeed, type: 2}

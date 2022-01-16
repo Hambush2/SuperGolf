@@ -14,4 +14,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void unFreezeTime()
+    {
+        Time.timeScale = 1;
+    }
+
+    public void resetScore()
+    {
+        Coin.Count = 0;
+    }
 }
