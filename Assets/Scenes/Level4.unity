@@ -5103,6 +5103,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1104
       objectReference: {fileID: 0}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 46233022}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 46233022}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: unFreezeTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: resetScore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
 --- !u!114 &1373616625 stripped

@@ -4682,6 +4682,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1850698084}
+    - target: {fileID: 2616082328831494589, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1850698084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
 --- !u!1001 &958802978
@@ -9135,6 +9143,7 @@ MonoBehaviour:
   MaxTime: 60
   _countDown: 0
   GameOverPopup: {fileID: 148678229}
+  cannon: {fileID: 0}
 --- !u!4 &1869218787
 Transform:
   m_ObjectHideFlags: 0
