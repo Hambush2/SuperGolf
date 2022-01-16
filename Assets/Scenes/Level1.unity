@@ -14096,12 +14096,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextBtn
       objectReference: {fileID: 0}
-    - target: {fileID: 2616082328012385178, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
-      propertyPath: m_text
-      value: 'Congratulations
-
-'
-      objectReference: {fileID: 0}
     - target: {fileID: 2616082328569498358, guid: c5b4cded8a1d64240b60c9ca7384ceef, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
