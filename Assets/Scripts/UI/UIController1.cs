@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour
+public class UIController1 : MonoBehaviour
 {
     [SerializeField] private Text _scoreText;
-    [SerializeField] private SettingsPopUp _settingsPopUp;
+    [SerializeField] private SettingsPopUp1 _settingsPopUp;
 
     private void Start()
     {
