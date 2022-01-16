@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverPopup : MonoBehaviour
 {
@@ -47,6 +48,6 @@ public class GameOverPopup : MonoBehaviour
 
     public void RestartLevel()
     {
-        GameManager.StartGame();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
