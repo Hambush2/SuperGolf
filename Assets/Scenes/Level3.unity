@@ -2924,7 +2924,7 @@ MonoBehaviour:
   MaxTime: 60
   _countDown: 0
   GameOverPopup: {fileID: 249507052}
-  cannon: {fileID: 0}
+  cannon: {fileID: 1204187622}
 --- !u!4 &381107004
 Transform:
   m_ObjectHideFlags: 0
