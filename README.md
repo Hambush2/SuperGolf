@@ -25,3 +25,4 @@ This project is made in unity/visual studio/C# and all files here will reflect t
   - UI and arts: [https://cga-creative-game-assets.itch.io/gold-2d-mobile-ui-for-casual-game]
   - Explosion particles: [https://assetstore.unity.com/packages/vfx/particles/polygonal-s-low-poly-particle-pack-118355]
   - Audio: [https://www.adobe.com/products/audition/offers/AdobeAuditionDLCSFX.html]
+  - Skyboxes: [https://assetstore.unity.com/packages/2d/textures-materials/sky/customizable-skybox-174576]
