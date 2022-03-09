@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
 
     public static void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
         Coin.Count = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public static void EndGame()
