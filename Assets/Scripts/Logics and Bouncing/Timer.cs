@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public float MaxTime = 60f;
+    [SerializeField] private float _maxTime = 60f;
+    public float MaxTime { get { return _maxTime; } set { _maxTime = value; } }  
 
     [SerializeField] private float _countDown = 0f;
+    public float CountDown { get { return _countDown; } set { _countDown = value; } }
 
     public GameOverPopup GameOverPopup;
     public GameObject cannon;
@@ -16,7 +18,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        _countDown = MaxTime;
+        _countDown = _maxTime;
         _timerIsRunning = true;
     }
 
