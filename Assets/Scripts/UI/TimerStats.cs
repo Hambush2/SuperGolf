@@ -20,7 +20,10 @@ public class TimerStats : MonoBehaviour
     private void DisplayTime()
     {
         if (_timer.CountDown <= 0f)
+        {
+            HasTimeOut();
             return;
+        }
         _timerDisplay.text = ConvertToTimeStandard();
     }
 
@@ -30,5 +33,10 @@ public class TimerStats : MonoBehaviour
         int seconds = (int)_timer.CountDown % 60;
         string answer = string.Format("{0:D2}m:{1:D2}s", minutes, seconds);
         return answer;
+    }
+
+    private void HasTimeOut()
+    {
+        _timerDisplay.enabled = false;
     }
 }
