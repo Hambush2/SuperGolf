@@ -1,5 +1,8 @@
 # Destruction City By Photonic Boom
 ### GDT/CGD Comp3013 - Project
+
+__Itch.io page: https://photonicboom.itch.io/destruction-city
+
 # Description
 Super Golf is an arcade-style game for the mobile market with a unique twist that leaves buildings and objects in ruin.
 
