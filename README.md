@@ -4,7 +4,7 @@
 __Itch.io page: https://photonicboom.itch.io/destruction-city
 
 # Description
-Super Golf is an arcade-style game for the casual PC gamers with a unique twist that leaves buildings and objects in ruin.
+Destruction City is an arcade-style game for the casual PC gamers with a unique twist that leaves buildings and objects in ruin.
 
 This project is made in unity/visual studio/C# and all files here will reflect this.
 
